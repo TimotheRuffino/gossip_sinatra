@@ -4,3 +4,5 @@
 
 ### Ruby : version 2.5.1
 ### Requiert les gems csv, shotgun, sinatra et puma
+
+## Créé dans le cadre de THP session 12
