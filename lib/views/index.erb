@@ -7,7 +7,7 @@
     <p>Si tu veux créer un nouveau potin clique <a href="/gossips/new">ici</a></p>
     <p>Quel potin veux-tu afficher ? (Pour cela clique sur son numéro)</p>
     	<% gossips.each_with_index do |gossip,index| %>
-        <p>	potin <a href="/gossips/<%= index %>/"> n°<%= index %></a>  déposé par <%= gossip.author %> </p>
+        <p>	potin <a href="/gossips/<%= index %>/"> n°<%= index %></a>  déposé par <%= gossip.author %> </p> 
       <% end %>
   </body>
 </html>
