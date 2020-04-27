@@ -24,10 +24,11 @@ class ApplicationController < Sinatra::Base
     #puts "De la bombe, et du coup ça, ça doit être ce que l'utilisateur a passé dans le champ gossip_content : #{params["gossip_content"]}"
   end
 
-  get '/gossips/:id' do
-    puts "Potin numéro #{params['id']} choisi : "
-    erb :show, locals: {gossips: Gossip.find(params['id'].to_i)}
+  get '/gossips/:id/' do
+    id = params["id"].to_i
+    erb :show, locals: {gossip: Gossip.find(id), id: id}
   end
 #binding.pry
 
+  
 end 

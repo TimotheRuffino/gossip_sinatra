@@ -24,12 +24,11 @@ class Gossip
         return all_gossips
       end
 
-      def self.find(n)
-        all_gossips = []
-        CSV.read("db/gossips.csv").each do |csv_line|
-          all_gossips << Gossip.new(csv_line[0], csv_line[1])
-        end
-        return all_gossips[n]
+      def self.find(id)
+        idx = id.to_i
+        puts idx
+        all_gossips = Gossip.all
+        return all_gossips[idx]
       end
-      
+
 end 
