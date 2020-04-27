@@ -1,0 +1,12 @@
+<html>
+  <head>
+<title>Gossip #<%= params['id'].to_i + 1 %></title>  </head>
+  <body>
+    <h1>Voici la page du potin <%= params['id'].to_i + 1 %></h1>
+    <p>
+      L'auteur du potin : <%= gossips.author %> <br/>
+      Le contenu du potin : <%= gossips.content %>
+    </p>
+    <a href="/">Lien pour revenir à la page des potins</a>
+  </body>
+</html>
